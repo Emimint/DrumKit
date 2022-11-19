@@ -1,10 +1,16 @@
-html {
-  font-size: 12px;
-  background: url('./background.jpg') bottom center;
-  background-size: cover;
+* {
+  box-sizing: border-box;
 }
 
-body,html {
+html {
+  font-size: 12px;
+  /* background: url('./background.jpg') bottom center; */
+  background-size: cover;
+  background-color: rgb(25, 42, 73);
+}
+
+body,
+html {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
@@ -16,20 +22,21 @@ body,html {
   min-height: 100vh;
   align-items: center;
   justify-content: center;
+  width: 100%;
 }
 
 .key {
-  border: .4rem solid black;
-  border-radius: .5rem;
+  border: 0.4rem solid black;
+  border-radius: 0.5rem;
   margin: 1rem;
   font-size: 1.5rem;
-  padding: 1rem .5rem;
-  transition: all .07s ease;
+  padding: 1rem 0.5rem;
+  transition: all 0.07s ease;
   width: 10rem;
   text-align: center;
   color: white;
-  background: rgba(0,0,0,0.4);
-  text-shadow: 0 0 .5rem black;
+  background: rgba(0, 0, 0, 0.4);
+  text-shadow: 0 0 0.5rem black;
 }
 
 .playing {
@@ -46,6 +53,19 @@ kbd {
 .sound {
   font-size: 1.2rem;
   text-transform: uppercase;
-  letter-spacing: .1rem;
+  letter-spacing: 0.1rem;
   color: #a641c5;
+}
+
+@media (max-width: 767px) {
+  html {
+    background-color: rgb(80, 50, 56);
+  }
+  .keys {
+    flex-direction: column;
+    align-items: center;
+  }
+    .key {
+    float: right;
+  }
 }
