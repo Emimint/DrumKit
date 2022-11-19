@@ -6,7 +6,7 @@ html {
   font-size: 12px;
   /* background: url('./background.jpg') bottom center; */
   background-size: cover;
-  background-color: rgb(25, 42, 73);
+  background-color: rgb(25, 42, 73); /* for control */
 }
 
 body,
@@ -58,7 +58,7 @@ kbd {
 }
 
 @media (max-width: 767px) {
-  html {
+  html { /* for control */
     background-color: rgb(80, 50, 56);
   }
   .keys {

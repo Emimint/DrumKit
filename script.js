@@ -13,8 +13,6 @@ function letsDrum(e) {
   audioInfo.play(); // play audio file
 }
 
-window.addEventListener("keydown", letsDrum);
-
 // 2: Monitoring each key transition to revert animation:
 function revertTransition(e) {
   if (e.propertyName !== "transform") return;
@@ -22,3 +20,11 @@ function revertTransition(e) {
 }
 
 keys.forEach((x) => x.addEventListener("transitionend", revertTransition));
+
+// 3: Choosing event to listen to according to viewport:
+if (window.matchMedia("(max-width: 767px)").matches) {
+  // The viewport is less than 768 pixels wide
+  window.addEventListener("touchmove", letsDrum);
+} else {
+  window.addEventListener("keydown", letsDrum);
+}
