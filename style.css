@@ -62,10 +62,8 @@ kbd {
     background-color: rgb(80, 50, 56);
   }
   .keys {
-    flex-direction: column;
-    align-items: center;
-  }
-    .key {
-    float: right;
+    display: grid;
+	  grid-template-columns: 50% 50%;
+    justify-items: center;
   }
 }
