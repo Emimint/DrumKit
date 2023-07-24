@@ -16,7 +16,7 @@ html {
   font-family: sans-serif;
 }
 
-h1, h2{
+h1, h2, footer{
   text-align: center;
   text-shadow: 0 0 0.5rem #a641c5;
 }
@@ -68,6 +68,15 @@ kbd {
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   color: #a641c5;
+}
+
+footer{
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+a {
+  color: black;
 }
 
 @media only screen and (max-width: 767px) {
