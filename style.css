@@ -4,9 +4,9 @@
 
 html {
   font-size: 12px;
-  /* background: url('./background.jpg') bottom center; */
+  background: url('./background.jpg') bottom center;
   background-size: cover;
-  background-color: rgb(25, 42, 73); /* for control */
+  /* background-color: rgb(25, 42, 73); for control */
 }
 
 body,
@@ -14,6 +14,19 @@ html {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+}
+
+h1, h2{
+  text-align: center;
+  text-shadow: 0 0 0.5rem #a641c5;
+}
+
+h1{
+    font-size : 5rem;
+}
+
+h2{
+  font-size : 3rem;
 }
 
 .keys {
@@ -57,9 +70,9 @@ kbd {
   color: #a641c5;
 }
 
-@media (max-width: 767px) {
+@media only screen and (max-width: 767px) {
   html { /* for control */
-    background-color: rgb(80, 50, 56);
+    background-color: rgb(96, 30, 43);
   }
   .keys {
     display: grid;
