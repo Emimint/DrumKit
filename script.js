@@ -32,6 +32,9 @@ function revertTransition(e) {
 }
 
 keys.forEach((x) => x.addEventListener("transitionend", revertTransition));
+keys.forEach((x) =>
+  x.addEventListener("webkitTransitionEnd", revertTransition)
+);
 
 // 3: Choosing event to listen to according to viewport:
 window.addEventListener("keydown", letsDrum);
