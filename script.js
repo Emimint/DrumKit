@@ -1,7 +1,6 @@
 "use strict";
 
 const keys = document.querySelectorAll(".key"); // list of all key div elements
-const keyboard = document.querySelector(".keys"); // all key div elements container
 
 // 1: Changing html element to play specific sound:
 function letsDrum( e ) {
